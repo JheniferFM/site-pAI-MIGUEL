@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feliz Dia dos Pais - Gustavo ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            overflow-x: hidden;
+            color: white;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 55px;
+            margin-top: 20px;
+            animation: brilho 2s infinite alternate;
+        }
+        
+        @keyframes brilho {
+            from {
+                text-shadow: 0 0 10px white;
+            }
+            to {
+                text-shadow: 0 0 30px cyan;
+            }
+        }
+        
+        h2 {
+            margin-top: 10px;
+            font-size: 35px;
+            color: #ffe082;
+        }
+        
+        .card {
+            margin-top: 40px;
+            background: rgba(255, 255, 255, .12);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, .4);
+        }
+        
+        p {
+            font-size: 22px;
+            line-height: 1.8;
+            margin: 20px;
+        }
+        
+        iframe {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            border: none;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+        
+        .botao {
+            display: inline-block;
+            margin-top: 0;
+            padding: 15px 35px;
+            background: #ffd54f;
+            color: #000;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: .3s;
+        }
+        
+        .botao:hover {
+            transform: scale(1.08);
+            background: white;
+        }
+        
+        footer {
+            margin-top: 50px;
+            font-size: 20px;
+            padding-bottom: 40px;
+        }
+        
+        .coração {
+            position: fixed;
+            color: red;
+            font-size: 25px;
+            animation: cair linear infinite;
+            top: -50px;
+        }
+        
+        @keyframes cair {
+            to {
+                transform: translateY(120vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>❤️ Feliz Dia dos Pais ❤️</h1>
+
+        <h2>Para o melhor pai do mundo,<br>Gustavo!</h2>
+
+        <div class="card">
+
+            <p>
+                Pai, hoje é um dia especial para agradecer por tudo o que você faz por mim.
+            </p>
+
+            <p>
+                Obrigado pelos ensinamentos, pelas conversas, pelos conselhos e por nunca desistir de mim.
+            </p>
+
+            <p>
+                Você é meu exemplo de força, coragem, dedicação e honestidade.
+            </p>
+
+            <p>
+                Espero que Deus continue abençoando sua vida com muita saúde, felicidade e muitos anos ao nosso lado.
+            </p>
+
+            <p>
+                Eu tenho muito orgulho de ser seu filho.
+            </p>
+
+            <p style="font-size:30px;color:#FFD700;">
+                ❤️ Te amo, pai! ❤️
+            </p>
+
+            <h2>Uma música para você</h2>
+
+            <iframe src="https://www.youtube.com/embed/6mB_v1X8T5s?autoplay=1&rel=0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+
+            <br>
+
+            <a class="botao" target="_blank" href="https://www.youtube.com/watch?v=6mB_v1X8T5s">
+🎵 Abrir música no YouTube
+</a>
+
+        </div>
+
+        <footer>
+
+            Feito com muito carinho para o meu pai,
+            <b>Gustavo</b>.
+
+            <br><br> ❤️ Feliz Dia dos Pais! ❤️
+
+        </footer>
+
+    </div>
+
+    <script>
+        for (let i = 0; i < 60; i++) {
+
+            let c = document.createElement("div");
+
+            c.innerHTML = "❤";
+
+            c.className = "coração";
+
+            c.style.left = Math.random() * 100 + "vw";
+
+            c.style.animationDuration = (Math.random() * 4 + 4) + "s";
+
+            c.style.opacity = Math.random();
+
+            c.style.fontSize = (Math.random() * 30 + 15) + "px";
+
+            document.body.appendChild(c);
+
+        }
+    </script>
+
+</body>
+
+</html>
